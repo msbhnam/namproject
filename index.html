@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background:#f4f4f4;
+        }
+        .menu {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu span {
+            position: relative;
+            color: white;
+            text-decoration: none;
+            padding: 5px 0;
+            transition: color 0.3s ease;
+        }
+        .menu span::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background: #fff;
+            transform: width 0.3s ease, left 0.4s ease;
+            transform: translateX(-50%);
+        }
+        .menu span:hover {
+            color: #d1d1d1; 
+            
+        }
+        .menu span:hover::after {
+            width: 50%;
+        }
+        .menu div {
+            margin: 0 15px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .header .text {
+            flex: 1;
+        }
+        .header img {
+            width: 400px;
+            height: auto;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        .portfolio {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .portfolio .project {
+            flex: 1;
+            min-width: 250px;
+            background: #eee;
+            text-align: center;
+            padding: 10px;
+        }
+        .portfolio img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="menu">
+            <div>Brand</div>
+            <div>
+                <span style="margin-right: 15px;">Header</span>
+                <span style="margin-right: 15px;">Biodata</span>
+                <span>Portfolio</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="header">
+                <div class="text">
+                    <h1>Selamat Datang di Website Saya</h1>
+                    <p>Saya lulusan Teknik Komputer dan Jaringan tapi saya memami dasar dari pemrograman</p>
+                </div>
+                <img src="image/gambardiri.png">
+            </div>
+            <section>
+                <h2>About Me</h2>
+                <p>A brief introduction about myself</p>
+                <table>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Education</td>
+                        <td>Occupation</td>
+                    </tr>
+                    <tr>
+                        <td>Misbahul Anam</td>
+                        <td>SMK Islam Cipasung</td>
+                        <td>Belum Bekerja</td>
+                    </tr>
+                    <tr>
+                        <td>Contact</td>
+                        <td>Hobi</td>
+                        <td>Alamat</td>
+                    </tr>
+                    <tr>
+                        <td>0812-1447-6710</td>
+                        <td>futsal dan Main Musik</td>
+                        <td>Purwakarta - Jawa Barat</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Portfolio</h2>
+                <div class="portfolio">
+                    <div class="project">
+                        <img src="image/projekone.png" alt="Proyek 1">
+                        <p>Proyek 1<br>ini adalah design yang saya buat menggunakan canva</p>
+                    </div>
+                     <div class="project">
+                        <img src="image/projekthree.png" alt="Proyek 1">
+                        <p>Proyek 2<br>ini adalah design yang saya buat menggunakan canva</p>
+                    </div>
+                     <div class="project">
+                        <img src="image/projektwo.png" alt="Proyek 1">
+                        <p>Proyek 3<br>ini adalah design yang saya buat menggunakan canva</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+</body>
+</html>
